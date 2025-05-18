@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bulb On/Off</title>
+    <style>
+      #bulb {
+        width: 100px;
+        height: 180px;
+        background-image: url("'images/pic_bulboff.gif'"); /* Default off image */
+        background-size: contain;
+        cursor: pointer; /* Indicate it's clickable */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bulb"></div>
+    <button id="toggleButton">Turn On</button>
+
+    <script>
+      const bulb = document.getElementById("bulb");
+      const toggleButton = document.getElementById("toggleButton");
+      let isOn = false;
+
+      toggleButton.addEventListener("click", () => {
+        if (isOn) {
+          bulb.style.backgroundImage = "url('images/pic_bulboff.gif')";
+          toggleButton.textContent = "Turn On";
+          isOn = false;
+        } else {
+          bulb.style.backgroundImage = "url('images/pic_bulbon.gif')";
+          toggleButton.textContent = "Turn Off";
+          isOn = true;
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+
+    <button
+      onclick="document.getElementById('myImage').src='images/download (1).jpg'"
+    >
+      Turn on the light
+    </button>
+
+    <img id="myImage" src="images/download.jpg " style="width: 60px" />
+
+    <button
+      onclick="document.getElementById('myImage').src='images/download.jpg'"
+    >
+      Turn off the light
+    </button>
+  </body>
+</html>

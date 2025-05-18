@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // objects litteral
+
+      var fashion = {
+        model: "77",
+        name: "Channel",
+        address: "Paris",
+      };
+
+      console.log(typeof fashion);
+      console.log(fashion);
+      document.write(
+        fashion.model + "   " + fashion.name + " " + fashion.address
+      );
+      document.write("<br>");
+      document.write("<br>");
+
+      // array
+
+      var ary = ["Gucchi", "Cartier", "Doir"];
+      console.log(ary[0]);
+      console.log(ary[2]);
+      console.log(ary[1]);
+
+      // Function
+
+      var first = 1995;
+      var second = 1997;
+      function addition() {
+        document.write(first + second);
+        console.log(first + second);
+        alert(first + second);
+      }
+
+      addition();
+
+      document.write("<br>");
+      document.write("<br>");
+
+      function divide() {
+        document.write(first / second);
+        console.log(first / second);
+        alert(first / second);
+      }
+
+      divide();
+      document.write("<br>");
+      document.write("<br>");
+
+      function multiplied() {
+        document.write(first * second);
+        console.log(first * second);
+        alert(first * second);
+      }
+
+      multiplied();
+
+      document.write("<br>");
+      document.write("<br>");
+      //   function syntax
+      function functionName() {}
+
+      functionName();
+    </script>
+  </body>
+</html>
