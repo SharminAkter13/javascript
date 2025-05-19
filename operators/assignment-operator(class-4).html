@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        
+      var p = 23;
+      var q = 54;
+      var r = (p += q);
+
+      document.write(r);
+
+      console.log(r);
+      document.write("<br>");
+      p *= 3;
+      console.log(p);
+      document.write("<br>");
+      q /= 2;
+      console.log(q);
     </script>
-</body>
+  </body>
 </html>
