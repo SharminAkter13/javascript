@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Assignment Operators</title>
   </head>
   <body>
     <script>
       var p = 23;
       var q = 54;
+      var x = 57;
       var r = (p += q);
 
       document.write(r);
@@ -20,6 +21,11 @@
       document.write("<br>");
       q /= 2;
       console.log(q);
+      x %= q;
+      console.log(x);
+      var y = 16;
+      y %= x;
+      console.log(y);
     </script>
   </body>
 </html>
