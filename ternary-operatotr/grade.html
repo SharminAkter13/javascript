@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade point</title>
+  </head>
+  <body>
+    <script>
+      var point = prompt("input your result");
+      switch (true) {
+        case point >= 90 && point <= 100:
+          document.write("A+");
+          break;
+
+        case point >= 90 && point <= 80:
+          document.write("A");
+          break;
+
+        case point >= 70 && point <= 80:
+          document.write("B+");
+          break;
+
+        case point >= 60 && point <= 70:
+          document.write("B");
+          break;
+
+        case point >= 50 && point <= 60:
+          document.write("C");
+          break;
+
+        case point >= 40 && point <= 50:
+          document.write("D");
+          break;
+
+        default:
+          document.write("Fail");
+      }
+
+      document.write("<br>");
+      document.write("<br>");
+
+      var grade = prompt("input your result");
+
+      if (grade >= 90 && grade <= 100) {
+        document.write("A+");
+      } else if (grade >= 90 && grade <= 80) {
+        document.write("A");
+      } else if (grade >= 70 && grade <= 80) {
+        document.write("B+");
+      } else if (grade >= 60 && grade <= 70) {
+        document.write("B");
+      } else if (grade >= 50 && grade <= 60) {
+        document.write("C");
+      } else if (grade >= 40 && grade <= 50) {
+        document.write("D");
+      } else {
+        document.write("Fail");
+      }
+    </script>
+  </body>
+</html>
