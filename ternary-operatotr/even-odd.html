@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even & Odd</title>
+  </head>
+  <body>
+    <script>
+      let no = 5;
+      if (no % 2 === 0) {
+        console.log("The number is Even");
+        document.write("The number is Even");
+      } else {
+        console.log("The  number is Odd");
+        document.write("The  number is Odd");
+      }
+
+      document.write("<br>");
+      document.write("<br>");
+
+      let number = prompt();
+      if (number % 2 === 0) {
+        console.log("The number is Even");
+        document.write("The number is Even");
+      } else {
+        console.log("The  number is Odd");
+        document.write("The  number is Odd");
+      }
+
+      document.write("<br>");
+      document.write("<br>");
+
+      const x = prompt();
+
+      const y = x % 2 === 0 ? "The number is Even" : "The  number is Odd";
+      document.write(y);
+    </script>
+  </body>
+</html>
