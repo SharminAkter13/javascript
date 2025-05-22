@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swap Statement</title>
+  </head>
+  <body>
+    <script>
+      <!-- decending order  -->
+
+      var p = parseInt(prompt("enter a number"));
+      var q = parseInt(prompt("enter a number"));
+      var r = parseInt(prompt("enter a number"));
+
+      if (p > q) {
+        num = p;
+        p = q;
+        q = num;
+      }
+      if (p > r) {
+        num = r;
+        r = p;
+        p = num;
+      }
+
+      if (q > r) {
+        num = q;
+        q = r;
+        r = num;
+      }
+
+      document.write(p + "," + q + "," + r);
+    </script>
+  </body>
+</html>
