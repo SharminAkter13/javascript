@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the largest number</title>
+  </head>
+  <body>
+    <script>
+      let x = prompt();
+      let y = prompt();
+      let z = prompt();
+      // Convert string inputs to numbers
+      x = parseFloat(x);
+      y = parseFloat(y);
+      z = parseFloat(z);
+      if (x > y && x > z) {
+        document.write("The largest number is" + " " + x);
+      } else if (y > x && y > z) {
+        document.write("The largest number is" + " " + y);
+      } else {
+        document.write("The largest number is" + " " + z);
+      }
+    </script>
+  </body>
+</html>
