@@ -13,18 +13,18 @@
       var q = parseInt(prompt("enter a number"));
       var r = parseInt(prompt("enter a number"));
 
-      if (p > q) {
+      if (p < q) {
         num = p;
         p = q;
         q = num;
       }
-      if (p > r) {
+      if (p < r) {
         num = r;
         r = p;
         p = num;
       }
 
-      if (q > r) {
+      if (q < r) {
         num = q;
         q = r;
         r = num;
