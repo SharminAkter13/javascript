@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counting positive, negative , zero and sum up numbers</title>
+  </head>
+  <body>
+    <script>
+      var data = [2, -4, 67, 47, 5, -64, 2, 7, 9, 7, 6, -7, -6, 0, 0];
+      var pos = 0;
+      var neg = 0;
+      var zero = 0;
+
+      for (i = 0; i < data.length; i++) {
+        if (data[i] > 0) {
+          pos++;
+        } else if (data[i] < 0) {
+          neg++;
+        } else {
+          zero++;
+        }
+      }
+
+      document.write("Total positive number = " + pos + "<br>");
+      document.write("Total negative number =" + neg + "<br>");
+      document.write("Total zero number =" + zero + "<br>");
+    </script>
+  </body>
+</html>
