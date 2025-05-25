@@ -7,10 +7,32 @@
   </head>
   <body>
     <script>
+      // for-in loop show index value
       const data = [2, 5, 64, 24, 35, 4, 85, 7, 9];
       for (d in data) {
         document.write(d + "--");
         document.write(data[d] + "<br>");
+      }
+      document.write("<br>");
+
+      const text = "IsDB-BISEW";
+      for (t in text) {
+        document.write(text[t] + "<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+
+      //  object literal in for-in loop
+      const user = {
+        name: "Abdullah",
+        age: 27,
+        email: "abdullah@gmail.com",
+      };
+
+      //   document.write(user.name+user.age+user.email)
+
+      for (p in user) {
+        document.write(user[p] + "<br>");
       }
     </script>
   </body>
