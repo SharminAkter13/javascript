@@ -14,10 +14,25 @@
         model: "F-41245",
         "update version": "29",
       };
-      //   cars.name = "FERRAI";
-      //   document.write(cars.name);
-      document.write(cars.name + " ," + cars.color + " ," + cars.model);
-      document.write(cars["update version"]);
+      // Object Property Update
+      cars.model = "F-87995";
+
+      //   object freeze to stop update
+      Object.freeze(cars);
+
+      cars.color = "Blue";
+
+    //   print
+      document.write(
+        cars.name +
+          " ," +
+          cars.color +
+          " ," +
+          cars.model +
+          " ," +
+          cars["update version"]
+      );
+      //   document.write(cars["update version"]);
       console.log(cars);
     </script>
   </body>
