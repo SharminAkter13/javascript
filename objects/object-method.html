@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <script>
+      // create an object
+      const user = {
+        FirstName: "Mishel",
+        LastName: "Binte Abdullah",
+        Id: 1288188,
+        Blood: "B+",
+        fullName: function () {
+          return (
+            this.FirstName +
+            " " +
+            this.LastName +
+            " ;" +
+            this.Id +
+            " ;" +
+            this.Blood
+          );
+        },
+      };
+      document.write(user.fullName());
+      console.log(user.fullName());
+
+      // print
+      //   console.log(
+      //     user.FirstName +
+      //       " " +
+      //       user.LastName +
+      //       " ;" +
+      //       user.Id +
+      //       " ;" +
+      //       user.Blood
+      //   );
+    </script>
+  </body>
+</html>
