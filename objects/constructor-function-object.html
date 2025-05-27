@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructor Function Object</title>
+  </head>
+  <body>
+    <h1>Constructor Function Object</h1>
+    <script>
+      function User(p, q, r, h, e) {
+        this.name = p;
+        this.age = q;
+        this.id = r;
+        this.hair = h;
+        this.eye = e;
+      }
+
+      const mishel = new User("Mishel", 22, 2023, "blond", "blue"); //for new object
+      const ayaan = new User("Ayaan", 22, 2023, "black", "brown"); //for new object
+      const umer = new User("Umer", 30, 2024, "black", "chocolate brown"); //for new object
+      const elif = new User("Elif", 24, 2025, "hazel", "blue"); //for new object
+      const rayaan = new User("Rayaan", 22, 2030, "chocolate brown", "hazel"); //for new object
+
+      console.log(mishel);
+      console.log(ayaan);
+      console.log(umer);
+      console.log(elif);
+      console.log(rayaan);
+
+      document.write(
+        mishel.name +
+          " ," +
+          mishel.eye +
+          " ," +
+          mishel.hair +
+          " ," +
+          mishel.age +
+          " ," +
+          mishel.id
+      );
+      document.write("<br>");
+      document.write("<br>");
+
+      document.write(
+        ayaan.name +
+          " ," +
+          ayaan.eye +
+          " ," +
+          ayaan.hair +
+          " ," +
+          ayaan.age +
+          " ," +
+          ayaan.id
+      );
+      document.write("<br>");
+      document.write("<br>");
+
+      document.write(
+        elif.name +
+          " ," +
+          elif.eye +
+          " ," +
+          elif.hair +
+          " ," +
+          elif.age +
+          " ," +
+          elif.id
+      );
+      document.write("<br>");
+      document.write("<br>");
+
+      document.write(
+        umer.name +
+          " ," +
+          umer.eye +
+          " ," +
+          umer.hair +
+          " ," +
+          umer.age +
+          " ," +
+          umer.id
+      );
+      document.write("<br>");
+      document.write("<br>");
+
+      document.write(
+        rayaan.name +
+          " ," +
+          rayaan.eye +
+          " ," +
+          rayaan.hair +
+          " ," +
+          rayaan.age +
+          " ," +
+          rayaan.id
+      );
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+  </body>
+</html>
