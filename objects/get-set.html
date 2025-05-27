@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      // with array
       const user = {
         FirstName: "Mishel",
         LastName: [],
@@ -22,6 +23,24 @@
 
       user.setData("Binte Abdullah");
       user.getName();
+
+      // with string
+
+      const users = {
+        FirstName: "Mishel",
+        LastName: "Binte Abdullah",
+        Id: 1288188,
+        Blood: "",
+        get blood() {
+          console.log(this.Blood);
+        },
+        set bloodName(bg) {
+          this.blood = bg;
+        },
+      };
+
+      users.set("AB+");
+      users.get();
     </script>
   </body>
 </html>
