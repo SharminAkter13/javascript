@@ -6,29 +6,27 @@
     <title>Array Splice</title>
   </head>
   <body>
-    <p>
-      const numbers =[1,2,3,4,5] <br />
-      const slice1 =numbers.slice(1,4); // returns [2,3,4] <br />
-      const slice2 =numbers.slice(2); // returns [3,4,5] <br />
-      const slice3 =numbers.slice(-2); // returns [4,5] <br />
-    </p>
+    <h1>Adds new items to an array</h1>
+
+    <h3>arr.splice(statrt_index position item)</h3>
     <script>
-      const french = [
+      var french = [
         "In Search of Lost Time",
         "The Stranger",
         "Madame Bovary",
         "Les Misérables ",
         "The Little Prince",
-        " Journey to the End of The Night ",
+        "Journey to the End of The Night",
         "The Red and the Black",
         "Candide",
       ];
+      //  0 means no change or delete
+      console.log(french);
+      french.splice(2, 0, "The Count of Monte Cristo");
+      console.log(french);
 
-      // console.log(french.slice(3, 5));
-      console.log(french.slice(-3, -1));
-      // console.log(french.slice(3, -1));
-      // console.log(french.slice(-3));
-      // console.log(french.slice(3));
+      french.splice(7, 6, "The Charterhouse of Parma");
+      console.log(french);
     </script>
   </body>
 </html>
