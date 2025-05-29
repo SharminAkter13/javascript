@@ -5,5 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Array Splice</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Adds new items to an array</h1>
+
+    <h3>arr.splice(statrt_index position item)</h3>
+    <script>
+      var french = [
+        "In Search of Lost Time",
+        "The Stranger",
+        "Madame Bovary",
+        "Les Misérables ",
+        "The Little Prince",
+        "Journey to the End of The Night",
+        "The Red and the Black",
+        "Candide",
+      ];
+      //  0 means no change or delete
+      console.log(french);
+      french.splice(2, 0, "The Count of Monte Cristo");
+      console.log(french);
+
+      french.splice(7, 6, "The Charterhouse of Parma");
+      console.log(french);
+    </script>
+  </body>
 </html>
