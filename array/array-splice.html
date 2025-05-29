@@ -5,5 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Array Splice</title>
   </head>
-  <body></body>
+  <body>
+    <p>
+      const numbers =[1,2,3,4,5] <br />
+      const slice1 =numbers.slice(1,4); // returns [2,3,4] <br />
+      const slice2 =numbers.slice(2); // returns [3,4,5] <br />
+      const slice3 =numbers.slice(-2); // returns [4,5] <br />
+    </p>
+    <script>
+      const french = [
+        "In Search of Lost Time",
+        "The Stranger",
+        "Madame Bovary",
+        "Les Misérables ",
+        "The Little Prince",
+        " Journey to the End of The Night ",
+        "The Red and the Black",
+        "Candide",
+      ];
+
+      // console.log(french.slice(3, 5));
+      console.log(french.slice(-3, -1));
+      // console.log(french.slice(3, -1));
+      // console.log(french.slice(-3));
+      // console.log(french.slice(3));
+    </script>
+  </body>
 </html>
