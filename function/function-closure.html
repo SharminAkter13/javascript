@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Function Closure</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h2>
+      A closure is a function that has access to the parent scope, after the
+      parent function has closed.
+    </h2>
+    <h3>A local variable is a "private" variable defined inside a function.</h3>
+    <h3>
+      A global variable is a "public" variable defined outside a function.
+    </h3>
     <script>
-        
+      //  Javascript Local Scope
+      document.write(equation());
+      document.write("<br>");
+
+      function equation() {
+        let x = 5;
+        return x == x;
+      }
+
+      equation(6, 6);
+      //  Global Scope / public function closure
+
+      document.write("<br>" + " global scope:" + "<br>" + "<br>");
+
+      let p = 9;
+      let q = 5;
+
+      function subs() {
+        return p - q;
+      }
+
+      document.write(subs());
+      document.write("<br>");
+
+      function multi() {
+        return p * q;
+      }
+
+      document.write(multi() + "<br>");
+      document.write("<br>" + " local scope:" + "<br>" + "<br>");
+
+      //  Local Scope / Private function closure
+
+      function sub2() {
+        let s = 15;
+        let t = 5;
+        return s - t;
+      }
+
+      document.write(sub2());
+      document.write("<br>");
+
+      function multi2() {
+        return s * t;
+      }
+
+      document.write(multi2());
+      document.write("<br>");
     </script>
-</body>
+  </body>
 </html>
