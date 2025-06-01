@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Function</title>
+    <style>
+      input {
+        width: 200px;
+        height: 50px;
+        background-color: rgb(50, 204, 204);
+        color: aliceblue;
+        font-weight: bolder;
+        font-size: 20pt;
+        border: 2px solid rgb(3, 73, 105);
+        border-radius: 15px;
+      }
+
+      div {
+        margin-top: 20%;
+        margin-left: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Click here for Increment/Decrement:</h1>
+
+      <input
+        type="button"
+        value="increment"
+        class="decrement"
+        id="decButton"
+        onclick="inc()"
+      />
+      <span id="displayValue"></span>
+      <input
+        type="button"
+        value="decrement"
+        class="increment"
+        id="incButton"
+        onclick="dec()"
+      />
+    </div>
+    <script>
+      let i = 0;
+      document.getElementById("displayValue").innerHTML = i;
+      function inc() {
+        document.getElementById("displayValue").innerHTML = i++;
+        console.log(i++);
+      }
+
+      function dec() {
+        document.getElementById("displayValue").innerHTML = i--;
+        console.log(i--);
+      }
+    </script>
+  </body>
+</html>

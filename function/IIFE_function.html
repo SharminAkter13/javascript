@@ -7,9 +7,35 @@
   </head>
   <body>
     <h3>
-      An IIFE is a function expression that runs right after it is created. It
-      is wrapped in parentheses to turn it into an expression, and then it is
-      immediately followed by another pair of parentheses to invoke it.
+      IIFE functions are executed immediately after their definitions. IIFE
+      functions are often used to create isolated scopes.
     </h3>
+
+    <h1>Auto invoke function / function as namespace</h1>
+    <h2>(function () {} () )</h2>
+    <h1>And function for Arrow Function</h1>
+    <h1>( () => {} )()</h1>
+
+    <script>
+      // an IIFE  that returns the sum of two numbers
+      (function () {})();
+
+      (function (x, y) {
+        console.log(x + y);
+      })(6, 8); //returns
+
+      (function (p, q) {
+        document.write(p + q);
+      })(26, 18);
+
+      document.write("<br>");
+      document.write("<br>");
+
+      // Arrow function
+
+      ((u, v, w) => {
+        document.write(u + v + w);
+      })(16, 38, 15);
+    </script>
   </body>
 </html>
