@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructor Function</title>
+  </head>
+  <body>
+    <h3>constructor Function vs Regular Function:</h3>
+    <h4>
+      Constructors are intended for creating objects, while regular function
+      perform specific tasks.
+    </h4>
+    <br />
+    <br />
+
+    <script>
+      function trainee(name, age, address, Programe, inst) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.Programe = Programe;
+        this.inst = inst;
+        this.greeting = function () {
+          document.write(
+            "Hi, My name is " +
+              this.name +
+              ". I'm " +
+              this.age +
+              " I'm from " +
+              this.address +
+              ". I'm learinig " +
+              this.Programe +
+              " under " +
+              this.inst +
+              "<br>" +
+              "<br>"
+          );
+        };
+      }
+
+      let trainee1 = new trainee(
+        "Sharmin Akter",
+        24,
+        "Dhaka",
+        "WDPF",
+        "IsDB BISEW IT Scholarship Programme"
+      );
+      let trainee2 = new trainee(
+        "Rafia Bonna",
+        26,
+        "Hazaribag",
+        "WDPF",
+        "IsDB BISEW IT Scholarship Programme"
+      );
+      let trainee3 = new trainee(
+        "Farhana Akter",
+        24,
+        "Mirpur",
+        "WDPF",
+        "IsDB BISEW IT Scholarship Programme"
+      );
+      let trainee4 = new trainee(
+        "Azmira Khatun",
+        24,
+        "Uttora",
+        "WDPF",
+        "IsDB BISEW IT Scholarship Programme"
+      );
+      trainee1.greeting();
+      trainee2.greeting();
+      trainee3.greeting();
+      trainee4.greeting();
+    </script>
+  </body>
+</html>
