@@ -30,12 +30,50 @@
       const trainee1 = new Trainees("Sharmin Akter", 25, 41210234651);
       trainee1.display();
       document.write(
-        "Myself " + trainee1.name + " & My Age is " + trainee1.age + " ."
+        "Myself " +
+          trainee1.name +
+          " & My Age is " +
+          trainee1.age +
+          " . <br><br>"
       );
 
+      class Book {
+        constructor(bname, author, age, genres) {
+          this.bname = bname;
+          this.author = author;
+          this.age = age;
+          this.genres = genres;
+        }
+        details() {
+          document.write(
+            this.bname +
+              " is a famous book series written by famous author " +
+              this.author +
+              ". She is  " +
+              this.age +
+              " years old with so many talents. The genres of her famous book series is - " +
+              this.genres +
+              "<br>" +
+              "<br>"
+          );
+        }
+      }
 
+      const book1 = new Book(
+        " Harry Potter",
+        "J. K. Rowling",
+        59,
+        "Fantasy,drama,young adult fiction,crime fiction"
+      );
+      book1.details();
 
-      
+      const book2 = new Book(
+        " Pride and Prejudice ",
+        "Jane Austen",
+        41,
+        "Literary , Realism ,Romantic , Fiction, Satire."
+      );
+      book2.details();
     </script>
   </body>
 </html>
