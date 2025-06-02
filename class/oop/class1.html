@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class</title>
+  </head>
+  <body>
+    <script>
+      class Trainees {
+        constructor(name, age, mobile) {
+          this.name = name;
+          this.age = age;
+          this.mobile = mobile;
+        }
+        display() {
+          document.write(
+            "Hi, My name is " +
+              this.name +
+              ". I'm " +
+              this.age +
+              " My Mobile No. is - " +
+              this.mobile +
+              "<br>" +
+              "<br>"
+          );
+        }
+      }
+
+      const trainee1 = new Trainees("Sharmin Akter", 25, 41210234651);
+      trainee1.display();
+      document.write(
+        "Myself " + trainee1.name + " & My Age is " + trainee1.age + " ."
+      );
+
+
+
+      
+    </script>
+  </body>
+</html>
