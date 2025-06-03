@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Object</title>
+  </head>
+  <body>
+    <h1>Empolyee Information:-</h1>
+    <script>
+      class user {
+        constructor(name, id, phoneNo) {
+          this.name = name;
+          this.id = id;
+          this.phoneNo = phoneNo;
+        }
+
+        display() {
+          document.write(
+            "Empolyee Name : " +
+              this.name +
+              "<br>" +
+              "Empolyee ID : " +
+              this.id +
+              "<br>" +
+              "Empolyee Phone NO. : " +
+              this.phoneNo +
+              "<br>  <br>"
+          );
+        }
+      }
+
+      const empolyee1 = new user("Adam Bin Mohammad", 103564, "01954654544");
+      const empolyee2 = new user("Mohammad Saleh", 107564, "01874654544");
+      const empolyee3 = new user("Rohan Mohammad", 106964, "01754654544");
+      empolyee1.display();
+      empolyee2.display();
+      empolyee3.display();
+    </script>
+  </body>
+</html>
