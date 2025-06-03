@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance / Subclass</title>
+  </head>
+  <body>
+    <h1>Inheritance / Subclass</h1>
+    <script>
+      class jeep {
+        constructor(names, models, brands, colors) {
+          this.name = names;
+          this.model = models;
+          this.brand = brands;
+          this.color = colors;
+        }
+        style() {
+          return "My " + this.name + ". It's Run at Lighting Speed .";
+        }
+      }
+
+      const jeep1 = new jeep(
+        "Jeep Renegade",
+        "BU",
+        " Fiat & Alfa Romeo",
+        "Teal Blue"
+      );
+      document.write(
+        "This is my " +
+          jeep1.name +
+          " . Model - " +
+          jeep1.model +
+          ".  Brand - " +
+          jeep1.brand +
+          " It's color is " +
+          jeep1.color +
+          ". <br>" +
+          "<br>"
+      );
+      document.write("<br>");
+
+      document.write(jeep1.style());
+
+      console.log(jeep1);
+      //   document.write("<br>");
+      //   document.write(jeep1.style());
+      document.write("<br>");
+      document.write("<br>");
+
+      class sportsCar extends jeep {
+        constructor(
+          names,
+          models,
+          brands,
+          colors,
+          engine,
+          transmis,
+          wheelbase
+        ) {
+          super(names, models, brands, colors);
+          this.engine = engine;
+          this.transmis = transmis;
+          this.wheelbase = wheelbase;
+        }
+        speeds() {
+          return (
+            // if you give document.write in both in function and outside of function it will show undefine.
+            "This " +
+            this.name +
+            " Sports Car is Your Next Destination." +
+            "<br>"
+          );
+        }
+      }
+
+      const sportsCar1 = new sportsCar(
+        "Toyota GT86",
+        "ZN6 & ZC6",
+        "Toyota ",
+        "Gray",
+        "2.0 L 4U-GSE/FA20 H4",
+        "6-speed",
+        "2,570 mm (101.2 in)"
+      );
+
+      console.log(sportsCar1);
+      document.write(sportsCar1.speeds());
+      console.log(sportsCar1.style());
+    </script>
+  </body>
+</html>
