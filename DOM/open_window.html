@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>open()</title>
+  </head>
+  <body>
+    <button onclick="op()">Click Here</button>
+
+    <script>
+      // syntax-- window.open(URL, windowName, features, replace);
+
+      function op() {
+        // document.open();
+        let x = window.open("", "", "width:300, height:300");
+        x.document.write(
+          "Hello!!! I'm Here Learning JavaScript." +
+            "<br>" +
+            " I'm in a Scholarship Programme in IsDB. " +
+            "<br>" +
+            "I have complete 26% of my course."
+        );
+      }
+    </script>
+  </body>
+</html>
