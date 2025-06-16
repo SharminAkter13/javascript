@@ -7,7 +7,7 @@
   </head>
   <body>
     <div>
-      <form action="#" name="form">
+      <form action="#" name="form"  style="padding: 60px; width: 500px; height: 200px; margin: 30px auto; background-color: rgba(206, 178, 233, 0.944); border-radius: 5px ;">
         <fieldset>
           <legend>Form</legend>
           Name &nbsp; :
@@ -17,7 +17,7 @@
 
           Address:
           <input type="text" name="fa" /><br /><br />
-          <input type="button" value="submit" onclick="My_form()" />
+          <input type="button"  onclick="My_form()" value="submit" />
           <input type="button" value="reset " />
         </fieldset>
       </form>
@@ -28,6 +28,12 @@
           var c = document.form.fc.value;
           var a = document.form.fa.value;
           p = open("", "", "width=400, height=400");
+          
+          with(p.document){
+            write("Name: "+n+"<br>");
+            write("Contact: "+c+"<br>");
+            write("Address: "+a+"<br>");
+          }
         }
       </script>
     </div>
